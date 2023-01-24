@@ -187,7 +187,7 @@ a:active {
 }
 
 .nav .nav-link::before {
-    content: "empty";
+    content: empty;
     position: absolute;
     top: 0;
     left: 0;
