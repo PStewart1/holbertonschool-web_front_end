@@ -166,7 +166,7 @@ a:active {
     height: 30rem;
     width: 100%;
     object-fit: cover;
-    bottom: 0;
+    vertical-align: bottom;
 }
 
 .card-work .card-inner {
