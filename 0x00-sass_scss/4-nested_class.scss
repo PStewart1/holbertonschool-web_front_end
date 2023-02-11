@@ -1,0 +1,11 @@
+/* My style */
+$body-text: #3D3D3D;
+$red-text: #FF0000;
+
+body {
+    color: $body-text;
+    
+    .red {
+        color: $red-text;
+    }
+}
