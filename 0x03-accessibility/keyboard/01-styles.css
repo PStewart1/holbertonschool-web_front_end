@@ -656,10 +656,6 @@
     transition: var(--transition-duration) var(--transition-cubic-bezier);
   }
   
-  .card-work:hover .card-inner {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  
   .card-work .card-title {
     text-align: center;
     margin: 0;
@@ -671,6 +667,7 @@
     display: block;
     text-decoration: none;
     padding-top: 45%;
+    opacity: 0;
   }
   
   .card-work .card-title a::after {
@@ -696,7 +693,6 @@
     .card-work .card-title a {
       display: block;
       padding: 2rem 1rem 0 1rem;
-      opacity: 0;
     }
   
     .card-work:hover .card-image {
