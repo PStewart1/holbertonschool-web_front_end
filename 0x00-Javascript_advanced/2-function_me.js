@@ -1,5 +1,7 @@
 function welcomeMessage (fullName) {
-  alert('Welcome ' + fullName);
+  return () => {
+    alert('Welcome ' + fullName);
+  };
 }
 
 const guillaume = welcomeMessage('Guillaume');
