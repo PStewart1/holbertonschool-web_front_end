@@ -31,6 +31,7 @@
         }
 
         function queryWikipedia(search) {
+            $("ul").empty();
             $.ajax({
                 type: 'GET',
                 url: `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${search}&format=json`,
