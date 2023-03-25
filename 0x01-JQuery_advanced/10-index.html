@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <title>Task 0</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script type="application/javascript">
+        function addPostRow(data) {
+            let newItem =`
+                <p><span>Post created with id ${data.id}, title: ${data.title}, author: ${data.author}</span></p>`;
+
+            $("body").append(newItem);
+        }
+
+        function listPosts() {
+            $.ajax({
+                type: 'GET',
+                url: `http://localhost:3000/posts`,
+                dataType: "jsonp",
+                success: (data) => {
+                    $("ul").first().empty();
+                    for (let item of data) {
+                        addPostRow(item);
+                    };
+                },
+                error: (data) => {
+                    alert("Server Error");
+                }
+            });
+        }
+
+        listPosts();
+
+    </script>
+</body>
+</html>
