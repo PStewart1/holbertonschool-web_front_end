@@ -1,0 +1,18 @@
+/* My style */
+@mixin margins10 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@mixin margins15 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+body {
+    @include margins10;
+}
+
+div {
+    @include margins15;
+}
